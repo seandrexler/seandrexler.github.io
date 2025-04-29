@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Angela Graph</title>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Raleway&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --main-color: #a33655;
+      --accent-color: #b5a52e;
+      --font-serif: 'Libre Baskerville', serif;
+      --font-sans: 'Raleway', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font-sans);
+      color: #333;
+    }
+
+    header {
+      background: var(--main-color);
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+
+    header h1 {
+      font-family: var(--font-serif);
+      font-size: 1.5rem;
+      color: var(--accent-color);
+    }
+
+    nav a {
+      color: #f8e8e8;
+      text-decoration: none;
+      margin-left: 1rem;
+    }
+
+    .hero {
+      background: var(--main-color);
+      text-align: center;
+    }
+
+    .hero img {
+      width: 100%;
+      max-height: 500px;
+      object-fit: cover;
+    }
+
+    .hero h2 {
+      position: relative;
+      top: -100px;
+      font-size: 2.5rem;
+      color: #fff;
+      font-family: var(--font-serif);
+      color: #e84c9c;
+    }
+
+    .section {
+      padding: 4rem 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .about {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .about img {
+      flex: 1 1 300px;
+      max-width: 100%;
+      border-radius: 6px;
+    }
+
+    .about-text {
+      flex: 1 1 300px;
+    }
+
+    .about-text h3 {
+      font-family: var(--font-serif);
+      color: var(--accent-color);
+      font-size: 1.8rem;
+    }
+
+    .about-text p {
+      font-size: 1rem;
+      margin: 1rem 0;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--main-color);
+      color: white;
+      padding: 0.7rem 1.2rem;
+      border: none;
+      text-decoration: none;
+      border-radius: 3px;
+      font-weight: bold;
+    }
+
+    .social h3 {
+      text-align: center;
+      font-family: var(--font-serif);
+      color: var(--accent-color);
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .social-images {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+
+    .social-images img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    .contact-info {
+      flex: 1 1 300px;
+    }
+
+    .contact-info h3 {
+      font-family: var(--font-serif);
+      color: var(--accent-color);
+      font-size: 1.8rem;
+    }
+
+    .contact-form {
+      flex: 2 1 400px;
+    }
+
+    .contact-form form {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 0.6rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    footer {
+      padding: 2rem;
+      background: #f5f5f5;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      font-size: 0.9rem;
+    }
+
+    footer h4 {
+      font-family: var(--font-serif);
+      font-weight: bold;
+    }
+
+    footer p, footer a {
+      color: #333;
+    }
+
+    .footer-left {
+      color: var(--accent-color);
+      font-family: var(--font-serif);
+    }
+
+    .footer-bottom {
+      background: var(--main-color);
+      height: 15px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Angela Graph</h1>
+  <nav>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <img src="hero.jpg" alt="Hero image" />
+  <h2>Unlock the Joy of Storytelling</h2>
+</section>
+
+<section class="section about">
+  <img src="about.jpg" alt="Lamp and book" />
+  <div class="about-text">
+    <h3>Get to know us</h3>
+    <p>Welcome to the whimsical world of imagination where words dance and stories spring to life! Dive in and discover the playful passion of our author, who can't wait to take you on a literary adventure full of delightful twists and turns.</p>
+    <a href="#" class="btn">Learn more</a>
+  </div>
+</section>
+
+<section class="section social">
+  <h3>Follow us on social</h3>
+  <div class="social-images">
+    <img src="social1.jpg" alt="Social 1"/>
+    <img src="social2.jpg" alt="Social 2"/>
+    <img src="social3.jpg" alt="Social 3"/>
+    <img src="social4.jpg" alt="Social 4"/>
+  </div>
+  <div style="text-align: center;">
+    <a href="#" class="btn">Social</a>
+  </div>
+</section>
+
+<section class="section contact">
+  <div class="contact-info">
+    <h3>Contact Us</h3>
+    <p>Interested in working together? Fill out some info and we will be in touch shortly. We can’t wait to hear from you!</p>
+  </div>
+  <div class="contact-form">
+    <form>
+      <div style="display: flex; gap: 1rem;">
+        <input type="text" placeholder="First Name" required />
+        <input type="text" placeholder="Last Name" required />
+      </div>
+      <input type="email" placeholder="Email" required />
+      <textarea rows="4" placeholder="Message" required></textarea>
+      <button type="submit" class="btn">Send</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-left">
+    <p><strong>Your Site Title</strong><br>Made with Squarespace</p>
+  </div>
+  <div>
+    <h4>Location</h4>
+    <p>123 Demo Street<br>New York, NY 12345</p>
+  </div>
+  <div>
+    <h4>Contact</h4>
+    <p><a href="mailto:email@example.com">email@example.com</a><br>(555) 555-5555</p>
+  </div>
+</footer>
+
+<div class="footer-bottom"></div>
+
+</body>
+</html>
+
